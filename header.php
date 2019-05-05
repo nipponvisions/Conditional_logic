@@ -34,3 +34,5 @@
  				<?php wp_nav_menu();  ?> 
 				<?php wp_head(); ?>
 	   		</header><!-- site_header --> 
+
+			<div class="below_header"> 

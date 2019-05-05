@@ -12,7 +12,6 @@ Description:  The template for displaying  search results
 
 <div class="notice"> This page is powered by search.php </div>
 
-<div class="below_header"> 
 	<p> this is  the search .php page it is displaying search results </p>
 
 	<?php
@@ -34,5 +33,5 @@ Description:  The template for displaying  search results
 
 	endif;
 	?>
-</div><!-- below_header -->
+
 <?php  get_footer();   

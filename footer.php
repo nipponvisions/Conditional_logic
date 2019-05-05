@@ -5,7 +5,7 @@
 	Description: powers the Footer to the conditional_logic theme
 */
 ?>
-
+			</div><!-- below_header -->
 			<footer class="footersite_footer">
 
 				<h2> This is the footer </h2>

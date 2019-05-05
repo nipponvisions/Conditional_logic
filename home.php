@@ -17,7 +17,7 @@ theme name: Conditional logics
 
 <div class="notice"> This page is powered by home.php </div>
 
-   <div class="below_header"> 
+
 
 
 <?php
@@ -56,7 +56,3 @@ theme name: Conditional logics
   
     get_footer(); 
 ?>
-
-
-
-</div><!-- below_header -->

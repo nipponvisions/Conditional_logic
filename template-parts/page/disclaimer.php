@@ -7,7 +7,7 @@
 **/
 ?>
 
- <div id="disclaimer_box">
+
 
  	<p> This is the disclaimer template-part </p>
- </div><!-- disclaimer_box>
+<!--  </div><!-- disclaimer_box> -->

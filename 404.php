@@ -14,8 +14,7 @@
 
 <div class="notice"> this is 404.php  </div>
 
-   <div class="below_header"> 
- 
+
         <div class="page-content">
           <h2><?php _e( 'This is somewhat embarrassing, isn’t it?', 'twentythirteen' ); ?></h2>
           <p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'twentythirteen' ); ?></p>
@@ -24,7 +23,7 @@
         </div><!-- .page-content -->
 
 
-	</div><!-- below_header -->
+	
 
    <?php get_footer() ; ?>
 

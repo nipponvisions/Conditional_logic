@@ -17,9 +17,6 @@ theme name: Conditional logics
 
 <div class="notice"> This page is powered by single.php  </div>
 
-   <div class="below_header"> 
-
-
 <?php
     if ( have_posts() ) : while ( have_posts() ) : the_post();
     	?>
@@ -44,4 +41,3 @@ theme name: Conditional logics
 
 
 
-</div><!-- below_header -->

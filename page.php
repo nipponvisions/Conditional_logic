@@ -16,38 +16,22 @@ description:  powers generic pages
 
 <div class="notice"> This page is powered by page.php </div>
 
-   <div class="below_header"> 
-
 <?php
-    if ( have_posts() ) {
-      while ( have_posts() ) {
-        the_post();
-        ?>
+if ( have_posts() ) {
+  while ( have_posts() ) {
+    the_post();
+    ?>
 
-        <h3> <?php the_title() ; ?> </h3>
+    <h3> <?php the_title() ; ?> </h3>
 
-      <!--CONDITIONAL LOGIC -->   
-      <!-- page_1 Nothing special -->
+    <!--CONDITIONAL LOGICS -->   
+    <div class="columns"> <!--  flex container--> 
+      <?php get_template_part('content'); ?>
 
+    </div><!-- columns -->
 
-        <div class="columns">
+    <?php 
+  } // endwhile
+} // endif
 
-
-
-        <?php get_template_part('content'); ?>
-      
-        </div><!-- columns -->
-
-
-
-            
-
-     <?php 
-    } // endwhile
- 
-
-    } // endif
-  
-    get_footer(); 
-
- 
+get_footer(); 

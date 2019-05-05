@@ -19,7 +19,6 @@ theme name: Conditional logics
 
 <div class="notice"> This page is powered by archive.php </div>
 
-   <div class="below_header"> 
 
 <?php the_post(); ?>
         <h1 class="entry-title"><?php the_title(); ?></h1>
@@ -36,4 +35,4 @@ theme name: Conditional logics
              <?php wp_list_categories(); ?>
         </ul>
 
-</div><!-- below_header -->
+<?php get_footer(); ?>

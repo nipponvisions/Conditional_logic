@@ -12,9 +12,6 @@
 
 <div class="notice"> This page is powered by page-contact.php </div>
 
-   <div class="below_header"> 
-
-
 <?php 
 		if ( have_posts() ) {
 			while ( have_posts() ) {
@@ -42,8 +39,5 @@
 		} // end if
 ?>
 					
-
-	</div><!-- below_header -->
-
    <?php get_footer() ; ?>
 

@@ -42,7 +42,7 @@ header.site_header {
    padding:10px;
    /*padding-bottom:60px; */  /* Height of the footer */
    border:2px solid red;
-   background-color:  grey;
+   background-color:  #efe8e8;
 }
 
 footer.footersite_footer {
