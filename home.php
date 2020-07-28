@@ -1,12 +1,12 @@
 <?php
-/*
-Template name: home.php
-author : Mathenge Moses
-description:  This page is called the blog posts index. 
-theme name: Conditional logics
--- 
-
-*/
+/**
+    * Template name: home.php
+    * Theme name: conditional logics
+    * Author : Mathenge Moses
+    * Description:  This page is called the blog posts index. 
+    * @link https://codex.wordpress.org/Conditional_Tags
+    *
+**/
 ?>
 
 <?php    get_header(); ?>

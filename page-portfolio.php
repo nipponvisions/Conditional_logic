@@ -1,46 +1,34 @@
 
 <?php
-/*
-Template name: page-portfolio.php
-author : Mathenge Moses
-description:  on top of the traditional page.php this template pulls  
-an extra template part  and adds it to the particular page ie portfolio 
--- 
+/**
+* Template name: page-portfolio.php
+* Author : Mathenge Moses
+* Description:  on top of the traditional page.php this template pulls  
+* an extra template part  and adds it to the particular page ie portfolio 
+*
+**/
 
-*/
+get_header(); 
 ?>
+<div class="notice"> This page is powered by page-portfolio.php </div>
 
-<?php    get_header(); ?>
-<h3> <?php get_search_form() ; ?> </h3> 
-<!-- <a href="index.php?page_id=23" title="Search Page">Search Page</a> -->
-<div class="notice"> This page is powered by page-portfolio.php  </div>
+<h3> <?php get_search_form()  ;  ?> </h3> 
 
 <?php
 if ( have_posts() ) {
-    while ( have_posts() ) {
-        the_post();
-        ?>
+  while ( have_posts() ) {
+    the_post();
+      
+      the_title('<h2>','</h2>') ;
+        // replace the_content() with get templatre part content
+        get_template_part('template-parts/page/content','page');
 
-        <h2> <?php  the_title();  ?> </h2>
-
-        <!--<div class="content_column">  -->
-        <?php
-        // check if the post has a Post Thumbnail assigned to it.
-        if ( has_post_thumbnail() ) {
-        the_post_thumbnail('medium');
-        }
-        ?>
-        <div id="disclaimer_box">
-        <?php get_template_part('template-parts/page/disclaimer'); ?>
-
-        </div><!--disclaimer_box --> 
-
-        <?php  the_content(); ?>
-        <!--</div>content_column -->
-
-        <?php
-    } //endwhile
-} //endif
-
+        // since the page portfolio is not refferenceced in the conditional logics,
+        // the 1st condtion which is for all pages will be executed 
+        // and you can add other conditions in the portfolio page itself
+        get_template_part('template-parts/page/disclaimer','page');
+  } // endwhile
+} // endif
 
 get_footer(); 
+?>

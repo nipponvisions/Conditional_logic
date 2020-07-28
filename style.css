@@ -1,6 +1,5 @@
 /*
 Theme Name: Conditional_logic
-
 Author: Mathenge Moses
 Description : a conditional logic theme
 Version: 1.0
@@ -85,25 +84,21 @@ footer.footersite_footer {
 
 #disclaimer_box{
     border:2px solid blue;
-  background-color: white;
+  background-color: orange;
   padding-left: 5px;
   max-width: 400px;
   position: absolute;
   top:230px;
   left:800px;
- 
-
-
 }
 
 
 
-.columns{
+.content{
 	border:2px solid blue;
 	display:flex;
 	flex-direction: row;
   padding-left: 10px;
-
 }
 .thumbnail_column{
   border: 2px solid white;
@@ -132,8 +127,6 @@ footer.footersite_footer {
   position: absolute;
   top:230px;
   left:800px;
-
-
 }
 
 

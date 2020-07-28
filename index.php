@@ -1,1 +1,2 @@
-index.php
+<?php
+// silence is golden

@@ -7,7 +7,8 @@
 **/
 ?>
 
-
-
- 	<p> This is the disclaimer template-part </p>
-<!--  </div><!-- disclaimer_box> -->
+<div id="disclaimer_box">
+	<p> This is the disclaimer template-part 
+		it adds a disclaimer box similar to the
+		 one added by the conditional logic</p>
+</div><!--disclaimer_box --> 

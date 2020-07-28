@@ -1,13 +1,12 @@
 <?php
 
-
-
-/* attach main style sheet */
-function add_conditional_logic_scripts()
-{
-	wp_enqueue_style( 'style', get_stylesheet_uri() );
+//enque scripts
+function conditional_logic_add_scripts(){
+	# main stylesheet
+	wp_enqueue_style('style', get_stylesheet_uri());
 }
-add_action('wp_enqueue_scripts', 'add_conditional_logic_scripts');
+add_action('wp_enqueue_scripts', 'conditional_logic_add_scripts');
+
 
 //register navbars
 function conditional_logic_register_nav_menus(){
@@ -20,16 +19,9 @@ function conditional_logic_register_nav_menus(){
 }
 add_action('init','conditional_logic_register_nav_menus');
 
-//enque scripts
-function Conditional_logic_add_scripts(){
-	wp_enqueue_style('style', get_stylesheet_uri());
-}
-add_action('init', 'Conditional_logic_add_scripts');
-
-
-
 /*  featured image setup */ 
 	add_theme_support('post-thumbnails');
+	
 
 /**
  * Filter the "read more" excerpt string link to the post.
