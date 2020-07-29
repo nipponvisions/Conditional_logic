@@ -21,6 +21,7 @@ body {
     width: 1050px;
     margin: auto;
     border: 3px solid green;
+    overflow: auto;
 
 }
 header.site_header {
@@ -42,6 +43,7 @@ header.site_header {
    /*padding-bottom:60px; */  /* Height of the footer */
    border:2px solid red;
    background-color:  #efe8e8;
+   overflow: auto;
 }
 
 footer.footersite_footer {
@@ -69,13 +71,13 @@ footer.footersite_footer {
 	padding-left:5px;
 }
 
-#archive_columns{
+.archive_columns{
   border:2px solid blue;
   display:flex;
   flex-direction:row;
 
 }
-#archive_columns li{
+.archive_columns li{
   list-style:none;
   border-left:2px solid black;
   padding-left:5px;
@@ -95,11 +97,21 @@ footer.footersite_footer {
 
 
 .content{
-	border:2px solid blue;
+	border:2px solid white;
 	display:flex;
 	flex-direction: row;
   padding-left: 10px;
+  width: 73%;
+  float: right;
+  overflow: auto;  /* clear fix */
+
 }
+.sidebar{
+  border: 2px solid blue;
+  background-color: orange;
+  width: 25%;
+}
+
 .thumbnail_column{
   border: 2px solid white;
   padding-left: 10px;

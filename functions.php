@@ -19,8 +19,23 @@ function conditional_logic_register_nav_menus(){
 }
 add_action('init','conditional_logic_register_nav_menus');
 
+
+function conditional_logic_register_sidebars(){
+	register_sidebar(
+		array(
+			'name' =>__('Primary'),
+			'id'   => 'sidebar_1'
+		)
+	);
+}
+add_action('widgets_init', 'conditional_logic_register_sidebars');
+
+
+
+
+
 /*  featured image setup */ 
-	add_theme_support('post-thumbnails');
+add_theme_support('post-thumbnails');
 	
 
 /**
@@ -37,7 +52,6 @@ function wpdocs_excerpt_more( $more ) {
             __( 'Read More', 'textdomain' )
         );
     }
- 
     return $more;
 }
 add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );

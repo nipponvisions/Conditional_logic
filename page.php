@@ -9,8 +9,8 @@
 
 ?>
 
-<?php    get_header(); ?>
-<div class="notice"> This page is powered by page.php </div>
+<?php    get_header(); 
+?> <div class="notice"> <?php global $template; echo basename($template); ?> </div>
 
 <h3> <?php get_search_form()  ;  ?> </h3> 
 
@@ -25,4 +25,6 @@ if ( have_posts() ) {
   } // endwhile
 } // endif
 
- get_footer(); ?>
+ get_sidebar();
+ get_footer(); 
+ ?>
